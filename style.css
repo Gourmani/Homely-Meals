@@ -1,0 +1,570 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+  background: #f5f5f5;
+  color: #333;
+}
+
+.header {
+  background: #2e767d;
+  color: #fff;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header nav a {
+  color: #fff;
+  margin-left: 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  height: 60vh;
+  background: linear-gradient(120deg, #66bb6a, #b74c13);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-content h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 25px;
+  background: white;
+  color: #2e7d32;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.menu-section {
+  padding: 30px;
+  text-align: center;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.menu-card {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.form-section {
+  padding: 30px;
+}
+
+form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+form input, form select {
+  padding: 12px;
+  margin-bottom: 15px;
+}
+
+.footer {
+  background: #2e7d32;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+
+.menu-item {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.menu-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.tab {
+  padding: 10px 18px;
+  border: none;
+  cursor: pointer;
+  background: #e0e0e0;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.tab.active {
+  background: #2e7d32;
+  color: white;
+}
+
+.menu-item {
+  position: relative;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.price {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #2e7d32;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
+
+
+.brand h1 {
+  font-size: 30px;
+  letter-spacing: 0.5px;
+}
+
+.brand span {
+  font-size: 13px;
+  color: rgba(255,255,255,0.85);
+}
+
+
+.hero {
+  position: relative;
+  padding: 60px 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  background: #fff8e1;
+  overflow: hidden;
+}
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0,0,0,0.55),
+    rgba(0,0,0,0.1)
+  );
+  z-index: 1;
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+
+.hero-content h2 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.hero-text h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero-images {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.hero-images img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.menu-item img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.contact-card {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.big-card {
+  max-width: 400px;
+}
+
+
+/* for plans section */
+
+.pricing {
+  padding: 50px 30px;
+  text-align: center;
+  background: #fff;
+}
+
+.pricing h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.pricing-note {
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.price-card {
+  background: #fff8e1;
+  border-radius: 14px;
+  padding: 25px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.price-card h3 {
+  margin-bottom: 15px;
+  color: #f57c00;
+}
+
+.price-card ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.price-card ul li {
+  margin: 8px 0;
+}
+
+.price-card.highlight {
+  background: #f57c00;
+  color: white;
+}
+
+.price-card.highlight h3 {
+  color: white;
+}
+
+.price-card.highlight .btn {
+  background: white;
+  color: #f57c00;
+}
+
+.tag {
+  position: absolute;
+  top: -10px;
+  right: 15px;
+  background: #2e7d32;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+}
+
+
+/*why us section*/
+.why-us {
+  padding: 50px 30px;
+  background: #f5f5f5;
+  text-align: center;
+}
+
+.why-us h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px,1fr));
+  gap: 20px;
+}
+
+.why-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  font-weight: 600;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+
+/*category image styling*/
+
+.category-image {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin: 30px 0;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.18);
+}
+
+.category-banner {
+  margin: 20px 0;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+}
+
+.category-banner img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  filter: brightness(0.8);
+}
+
+.category-banner h3 {
+  position: absolute;
+  bottom: 14px;
+  left: 18px;
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+
+/*delivery line styling*/
+.delivery-line {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+}
+
+/*delivery info*/
+
+.delivery-info {
+  padding: 40px 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  background: #fff;
+  text-align: center;
+}
+
+.delivery-card {
+  background: #fff8e1;
+  padding: 20px;
+  border-radius: 14px;
+  font-weight: 600;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+/* ========================= */
+/* MOBILE RESPONSIVE STYLES */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+  /* MENU PAGE */
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tabs {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .tab {
+    padding: 8px 14px;
+    font-size: 14px;
+  }
+
+  .category-banner img {
+    height: 150px;
+  }
+
+  .menu-item {
+    padding: 16px;
+  }
+
+  .price {
+    position: static;
+    margin-top: 8px;
+    display: inline-block;
+  }
+
+  /* HEADER - MOBILE FIX */
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .header nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header nav a {
+    font-size: 14px;
+    margin-left: 0;
+  }
+
+  .brand h1 {
+    font-size: 22px;
+  }
+
+  .brand span {
+    font-size: 11px;
+  }
+
+  /* HERO - MOBILE FIX */
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 40px 20px;
+    text-align: left;
+  }
+
+  .hero-content h2 {
+    font-size: 26px;
+    line-height: 1.25;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+  }
+
+  .delivery-line {
+    font-size: 13px;
+  }
+
+  .hero-images {
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+  }
+
+  .hero-images img {
+    height: 120px;
+  }
+}
+
+/* HERO OVERLAY (GLOBAL OK) */
+.hero-overlay {
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.55),
+    rgba(0,0,0,0.2)
+  );
+}
+
+
+/*Pre book page styles*/
+
+.booking-form {
+  max-width: 420px;
+  margin: auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.booking-form h2 {
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.form-note {
+  text-align: center;
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.booking-form label {
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 10px;
+  display: block;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-family: 'Poppins', sans-serif;
+}
+
+.full-btn {
+  width: 100%;
+  text-align: center;
+  background: #2e7d32;
+  color: #fff;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pre-Book Meal | Homely Meals</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <h1>Pre-Book Your Meal</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+  </nav>
+</header>
+
+<section class="form-section">
+  <form class="booking-form" onsubmit="sendWhatsApp(); return false;">
+
+    <h2>Quick Meal Booking</h2>
+    <p class="form-note">Fresh & nutritious food delivered at your place</p>
+
+    <!-- Name -->
+    <input type="text" id="name" placeholder="Your Name" required>
+
+    <!-- Phone -->
+    <input type="tel" id="phone" placeholder="WhatsApp Number" required>
+
+    <!-- Subscription Type -->
+    <label>Subscription Type</label>
+    <select id="plan" required>
+      <option value="">Select Plan</option>
+      <option value="One Time Order">One Time Order</option>
+      <option value="Daily Plan">Daily</option>
+      <option value="Weekly Plan">Weekly</option>
+      <option value="Monthly Plan">Monthly</option>
+    </select>
+
+    <!-- Meal Preference -->
+    <label>Meal Preference</label>
+    <select id="meal" required>
+      <option value="">Select Meal</option>
+      <option value="Breakfast">Breakfast</option>
+      <option value="Lunch">Lunch</option>
+      <option value="Dinner">Dinner</option>
+      <option value="Breakfast + Lunch">Breakfast + Lunch</option>
+      <option value="Lunch + Dinner">Lunch + Dinner</option>
+      <option value="Full Day">Full Day (B + L + D)</option>
+      <option value="Fitness Meals">Fitness Meals</option>
+    </select>
+
+    <!-- Start Date -->
+    <label>Start Date</label>
+    <input type="date" id="date" required>
+
+    <!-- Address -->
+    <textarea id="address" placeholder="Complete Delivery Address" rows="3" required></textarea>
+
+    <button type="submit" class="btn full-btn">
+      📲 Confirm on WhatsApp
+    </button>
+
+  </form>
+</section>
+
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Menu | Homely Meals</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <h1>Our Menu</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="prebook.html">Pre-Book</a>
+  </nav>
+</header>
+
+<section class="menu-section">
+  <h2>Our Healthy Food Menu</h2>
+  <p class="note">
+  Nutritious, protein-rich homemade food delivered at affordable prices in Darbhanga
+</p>
+
+  <!-- TABS -->
+  <div class="tabs">
+    <button class="tab active" onclick="showCategory('breakfast')">Breakfast</button>
+    <button class="tab" onclick="showCategory('lunch')">Lunch</button>
+    <button class="tab" onclick="showCategory('dinner')">Dinner</button>
+    <button class="tab" onclick="showCategory('fitness')">Fitness</button>
+  </div>
+
+  <!-- ================= BREAKFAST ================= -->
+  <div class="category" id="breakfast">
+
+    <div class="category-banner">
+      <img src="assets/images/breakfast.webp" alt="Breakfast Meals">
+      <h3>Healthy Breakfast</h3>
+    </div>
+
+    <div class="menu-grid">
+      <div class="menu-item">
+        <h3>Poha</h3>
+        <p>Light & digestible • ~12g protein</p>
+        <span class="price">₹40</span>
+        <button class="btn" onclick="orderWhatsApp('Poha - Breakfast')">Order</button>
+      </div>
+
+      <div class="menu-item">
+        <h3>Protein Rich Sandwich</h3>
+        <p>Paneer / Sprouts • ~18g protein</p>
+        <span class="price">₹60</span>
+        <button class="btn" onclick="orderWhatsApp('Protein Sandwich - Breakfast')">Order</button>
+      </div>
+
+      <div class="menu-item">
+        <h3>Idli Sambhar</h3>
+        <p>Fermented & healthy • ~15g protein</p>
+        <span class="price">₹40</span>
+        <button class="btn" onclick="orderWhatsApp('Idli Sambhar - Breakfast')">Order</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= LUNCH ================= -->
+<div class="category hidden" id="lunch">
+
+  <div class="category-banner">
+    <img src="assets/images/lunch.jpg" alt="Lunch Meals">
+    <h3>Healthy Lunch</h3>
+  </div>
+
+  <div class="menu-grid">
+
+    <!-- NORMAL LUNCH -->
+    <div class="menu-item">
+      <h3>Healthy Lunch Thali</h3>
+      <p>
+        2 Roti + Rice + Dal + Seasonal Gravy Veg + Dry Veg + Salad + Curd<br>
+        <small>Simple • Ghar Jaisa • Daily Meal</small>
+      </p>
+      <span class="price">₹80</span>
+      <button class="btn" onclick="orderWhatsApp('Healthy Lunch Thali - ₹80')">Order</button>
+    </div>
+
+    <!-- SPECIAL LUNCH -->
+    <div class="menu-item">
+      <h3>Healthy Special Lunch Thali</h3>
+      <p>
+        2 Roti + Jeera Rice / Veg Biryani + Paneer / Protein Gravy<br>
+        Thick Curd Raita + Salad + Protein Bar / Sprouts Chaat<br>
+        <small>Special • Protein Rich</small>
+      </p>
+      <span class="price">₹110</span>
+      <button class="btn" onclick="orderWhatsApp('Healthy Special Lunch Thali - ₹110')">Order</button>
+    </div>
+
+  </div>
+</div>
+
+
+  <!-- ================= DINNER ================= -->
+<div class="category hidden" id="dinner">
+
+  <div class="category-banner">
+    <img src="assets/images/dinner.jpg" alt="Dinner Meals">
+    <h3>Healthy Dinner</h3>
+  </div>
+
+  <div class="menu-grid">
+
+    <!-- NORMAL DINNER -->
+    <div class="menu-item">
+      <h3>Healthy Dinner Thali</h3>
+      <p>
+        Roti / Paratha + Rice + Dal + Seasonal Veg + Dry Veg + Salad + Curd<br>
+        Homemade Pickle included
+      </p>
+      <span class="price">₹80</span>
+      <button class="btn" onclick="orderWhatsApp('Healthy Dinner Thali - ₹80')">Order</button>
+    </div>
+
+    <!-- SPECIAL DINNER -->
+    <div class="menu-item">
+      <h3>Healthy Special Dinner Thali</h3>
+      <p>
+        Paratha + Veg Biryani / Fried Rice + Paneer / Soyabean Gravy<br>
+        Thick Raita + Salad + Sweet (2 days/week)
+      </p>
+      <span class="price">₹120</span>
+      <button class="btn" onclick="orderWhatsApp('Healthy Special Dinner Thali - ₹120')">Order</button>
+    </div>
+
+  </div>
+</div>
+
+  <!-- ================= FITNESS ================= -->
+  <div class="category hidden" id="fitness">
+
+    <div class="category-banner">
+      <img src="assets/images/fitness.jpg" alt="Fitness Meals">
+      <h3>Fitness Friendly</h3>
+    </div>
+
+    <div class="menu-grid">
+      <div class="menu-item">
+        <h3>Sattu Protein Drink</h3>
+        <p>Natural protein • digestion friendly</p>
+        <span class="price">₹30</span>
+        <button class="btn" onclick="orderWhatsApp('Sattu Protein Drink')">Order</button>
+      </div>
+
+      <div class="menu-item">
+        <h3>Fruit Salad</h3>
+        <p>Fresh seasonal fruits • vitamins</p>
+        <span class="price">₹40</span>
+        <button class="btn" onclick="orderWhatsApp('Fruit Salad')">Order</button>
+      </div>
+
+      <div class="menu-item">
+        <h3>Protein Curd Bowl</h3>
+        <p>Curd + roasted seeds</p>
+        <span class="price">₹50</span>
+        <button class="btn" onclick="orderWhatsApp('Protein Curd Bowl')">Order</button>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<script src="menu.js"></script>
+
+<footer class="footer">
+  <p>Healthy Food • Protein Rich • Hygienic</p>
+</footer>
+
+</body>
+</html>
