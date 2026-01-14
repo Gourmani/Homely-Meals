@@ -476,9 +476,18 @@ form input, form select {
 }
 
 .hero-images {
-  display: none;
-}
-
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 20px;
+  }
+.hero-images img {
+    height: 180px;
+    border-radius: 16px;
+  }
+.hero-images img:not(:first-child) {
+    display: none;
+  }
+  
 .hero-content h2 {
   font-size: 24px;
   line-height: 1.3;
